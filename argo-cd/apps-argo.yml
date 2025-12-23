@@ -1,20 +1,19 @@
-apiversion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd
   namespace: argocd
+
 spec:
   project: default
 
-
   source:
-    repoURL: 'https://github.com/MohamedA15/k8-project'
+    repoURL: "https://github.com/MohamedA15/k8-project"
     targetRevision: HEAD
     path: apps
 
-
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
     namespace: apps
 
   syncPolicy:
@@ -23,4 +22,4 @@ spec:
       selfHeal: true
 
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
