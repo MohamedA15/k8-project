@@ -1,0 +1,11 @@
+# Environment variables / secrets
+.env
+
+# Terraform local files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
