@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: 'https://github.com/MohamedA15/k8-project'
     targetRevision: HEAD
-    path: app-hub 
+    path: apps
 
 
   destination:
